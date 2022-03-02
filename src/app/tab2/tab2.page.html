@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">API</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+
+  <ion-div class="row">
+    <ion-div class ="col-12">
+    <ion-table class = "table">
+      <ion-thead>
+        <ion-th>Escuelas</ion-th>
+      </ion-thead>
+      <ion-tbody *ngFor="let item of escuelas">
+        <ion-tr>
+          <ion-td>{{item ['name']}}</ion-td>
+        </ion-tr>
+      </ion-tbody>
+    </ion-table>
+  </ion-div>
+  </ion-div>
+
+
+
+
+
+
+
+
+</ion-content>
